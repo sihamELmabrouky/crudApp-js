@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> crud app js | devsiham</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="color: white; background: #707881;">
+    <div class="container mt-5 container2">
+        <div class="text-center">
+            <h1 class="display-5 mt-5"> CRUD Application </h1>
+        </div>
+        <div class="main jystify-content-center">
+            <form action="" class=" row jystify-content-center mb-4 form2" id="student-form" autocomplete="off">
+                <div class="col-10 col-md-8 mb-3">
+                    <label for="firstName">First Name</label>
+                    <input type="text" class="form-control" placeholder="Enter First Name" id="firstName">
+                </div>
+                <div class="col-10 col-md-8 mb-3">
+                    <label for="lasttName">Last Name</label>
+                    <input type="text" class="form-control" placeholder="Enter Last Name" id="lastName">
+                </div>
+                <div class="col-10 col-md-8 mb-3">
+                    <label for="rollNo">Roll No</label>
+                    <input type="text" class="form-control" placeholder="Enter  Roll No" id="rollNo">
+                </div>
+                <div class="col-10 col-md-8">
+                    <input type="submit" class=" btn btn-success add-btn" value="submit">
+                </div>
+            </form>
+            <div class="col-12 col-md-10 mt-5 table3 ">
+                <table class=" table table-striped table-dark table2">
+                    <thead>
+                        <tr>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Roll NO </th>
+                            <th>Actions</th>
+                        </tr>
+
+                    </thead>
+                    <tbody id="student-list">
+                        <tr>
+                            <td>siham</td>
+                            <td> devloper</td>
+                            <td>23</td>
+                            <td>
+                                <a href="#" class="btn btn-warning btn-sm edit">Edit</a>
+                                <a href="#" class="btn btn-danger btn-sm delete">delete</a>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
